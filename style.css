@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Arial','sans-serif';
+    font-size: 16pt;
+}
+
+
+main {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template: 'a a a a a';
+
+}
+
+
+div#display {
+    border: 2px solid black;
+    grid-area:1/span 5;
+    margin: 0 5px 20px 5px;
+    padding: 10px;
+    text-align: right;
+    height: 16pt;
+}
+
+button.keys {
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+}
+
+/*The plus sign*/
+button.keys:nth-child(20){
+    grid-area: 2 span/4;
+}
